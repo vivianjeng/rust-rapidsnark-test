@@ -31,3 +31,4 @@ thiserror = "2.0.12"
 rust-witness = { version = "0.1.6" }
 # witnesscalc-adapter = { path = "../witnesscalc_adapter/witnesscalc_adapter" }
 rust-rapidsnark = { git = "https://github.com/zkmopro/rust-rapidsnark.git", branch = "bump-version" }
+cc = "1.0"

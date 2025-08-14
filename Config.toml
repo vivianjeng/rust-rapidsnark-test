@@ -1,11 +1,5 @@
 build_mode = "release"
 target_adapters = ["circom"]
-target_platforms = [
-    "android",
-    "ios",
-]
-ios = [
-    "aarch64-apple-ios",
-    "aarch64-apple-ios-sim",
-]
+target_platforms = ["ios"]
+ios = ["aarch64-apple-ios"]
 android = ["aarch64-linux-android"]
