@@ -406,7 +406,7 @@ dependencies = [
  "num-traits",
  "rand",
  "rayon",
- "rust-rapidsnark 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rust-rapidsnark",
  "rust-witness",
  "serde_json",
  "uuid",
@@ -813,11 +813,10 @@ dependencies = [
 name = "mopro-example-app"
 version = "0.1.0"
 dependencies = [
- "cc",
  "mopro-ffi",
  "mopro-wasm",
  "num-bigint",
- "rust-rapidsnark 0.1.1 (git+https://github.com/zkmopro/rust-rapidsnark.git?branch=bump-version)",
+ "rust-rapidsnark",
  "rust-witness",
  "thiserror 2.0.14",
 ]
@@ -1107,19 +1106,7 @@ dependencies = [
 [[package]]
 name = "rust-rapidsnark"
 version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ccf47a6aedd44c85537d9e1ca6255cda1503720e80ff61613372e8694ec783c5"
-dependencies = [
- "anyhow",
- "cc",
- "num-bigint",
- "num-traits",
-]
-
-[[package]]
-name = "rust-rapidsnark"
-version = "0.1.1"
-source = "git+https://github.com/zkmopro/rust-rapidsnark.git?branch=bump-version#50d71afbd02846563aae13cefd8358ed1f8e1ef9"
+source = "git+https://github.com/zkmopro/rust-rapidsnark.git?branch=bump-version#8231d16df103de6812168fcefb3f9e985912cf55"
 dependencies = [
  "anyhow",
  "cc",
