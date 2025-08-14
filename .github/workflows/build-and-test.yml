@@ -18,11 +18,11 @@ jobs:
         if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
         steps:
             - uses: actions/checkout@v5
-            - name: Install Rust toolchain
-              uses: actions-rs/toolchain@v1
+            - name: Install Rust
+              uses: dtolnay/rust-toolchain@stable
               with:
                   toolchain: "1.89.0"
-                  override: true
+                  targets: aarch64-apple-ios
             - name: Run tests
               run: cargo build --target aarch64-apple-ios
     build-macOS-v1-81-0:
@@ -30,10 +30,10 @@ jobs:
         if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
         steps:
             - uses: actions/checkout@v5
-            - name: Install Rust toolchain
-              uses: actions-rs/toolchain@v1
+            - name: Install Rust
+              uses: dtolnay/rust-toolchain@stable
               with:
                   toolchain: "1.81.0"
-                  override: true
+                  targets: aarch64-apple-ios
             - name: Run tests
               run: cargo build --target aarch64-apple-ios
