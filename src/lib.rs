@@ -20,12 +20,12 @@ fn mopro_uniffi_hello_world() -> String {
 
 // Module containing the Circom circuit logic (Multiplier2)
 
-// rust_witness::witness!(multiplier2);
-witnesscalc_adapter::witness!(multiplier2);
+rust_witness::witness!(multiplier2);
+// witnesscalc_adapter::witness!(multiplier2);
 
 mopro_ffi::set_circom_circuits! {
-    // ("multiplier2_final.zkey", mopro_ffi::witness::WitnessFn::RustWitness(multiplier2_witness))
-    ("multiplier2_final.zkey", mopro_ffi::witness::WitnessFn::WitnessCalc(multiplier2_witness))
+    ("multiplier2_final.zkey", mopro_ffi::witness::WitnessFn::RustWitness(multiplier2_witness))
+    // ("multiplier2_final.zkey", mopro_ffi::witness::WitnessFn::WitnessCalc(multiplier2_witness))
 }
 
 #[cfg(test)]
