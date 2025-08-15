@@ -386,7 +386,6 @@ checksum = "9555578bc9e57714c812a1f84e4fc5b4d21fcb063490c624de019f7464c91268"
 [[package]]
 name = "circom-prover"
 version = "0.1.2"
-source = "git+https://github.com/zkmopro/mopro.git#8aeb8baef2a5b70c9b985b64d29c05b6f399b116"
 dependencies = [
  "anyhow",
  "ark-bls12-381",
@@ -406,10 +405,10 @@ dependencies = [
  "num-traits",
  "rand",
  "rayon",
- "rust-rapidsnark",
  "rust-witness",
  "serde_json",
  "uuid",
+ "witnesscalc-adapter",
 ]
 
 [[package]]
@@ -815,16 +814,14 @@ version = "0.1.0"
 dependencies = [
  "mopro-ffi",
  "mopro-wasm",
- "num-bigint",
- "rust-rapidsnark",
  "rust-witness",
  "thiserror 2.0.14",
+ "witnesscalc-adapter",
 ]
 
 [[package]]
 name = "mopro-ffi"
 version = "0.2.0"
-source = "git+https://github.com/zkmopro/mopro.git#8aeb8baef2a5b70c9b985b64d29c05b6f399b116"
 dependencies = [
  "anyhow",
  "camino",
@@ -838,6 +835,7 @@ dependencies = [
  "toml 0.8.23",
  "uniffi",
  "uuid",
+ "witnesscalc-adapter",
 ]
 
 [[package]]
@@ -1101,17 +1099,6 @@ dependencies = [
  "memchr",
  "nom",
  "serde",
-]
-
-[[package]]
-name = "rust-rapidsnark"
-version = "0.1.1"
-source = "git+https://github.com/zkmopro/rust-rapidsnark.git?branch=bump-version#8231d16df103de6812168fcefb3f9e985912cf55"
-dependencies = [
- "anyhow",
- "cc",
- "num-bigint",
- "num-traits",
 ]
 
 [[package]]
@@ -1887,6 +1874,19 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6f42320e61fe2cfd34354ecb597f86f413484a798ba44a8ca1165c58d42da6c1"
 dependencies = [
  "bitflags",
+]
+
+[[package]]
+name = "witnesscalc-adapter"
+version = "0.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a763517285b66feea7a90418a822921fcfa2b97c02de4fbbf062a8220277c1ed"
+dependencies = [
+ "anyhow",
+ "num-bigint",
+ "num-traits",
+ "paste",
+ "serde_json",
 ]
 
 [[package]]
