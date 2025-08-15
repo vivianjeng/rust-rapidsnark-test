@@ -386,6 +386,7 @@ checksum = "9555578bc9e57714c812a1f84e4fc5b4d21fcb063490c624de019f7464c91268"
 [[package]]
 name = "circom-prover"
 version = "0.1.2"
+source = "git+https://github.com/zkmopro/mopro.git#6418b4409fb9bfbc5a5e5418b3fd83c8f2b1b352"
 dependencies = [
  "anyhow",
  "ark-bls12-381",
@@ -822,6 +823,7 @@ dependencies = [
 [[package]]
 name = "mopro-ffi"
 version = "0.2.0"
+source = "git+https://github.com/zkmopro/mopro.git#6418b4409fb9bfbc5a5e5418b3fd83c8f2b1b352"
 dependencies = [
  "anyhow",
  "camino",
@@ -841,7 +843,7 @@ dependencies = [
 [[package]]
 name = "mopro-wasm"
 version = "0.1.0"
-source = "git+https://github.com/zkmopro/mopro.git#8aeb8baef2a5b70c9b985b64d29c05b6f399b116"
+source = "git+https://github.com/zkmopro/mopro.git#6418b4409fb9bfbc5a5e5418b3fd83c8f2b1b352"
 dependencies = [
  "console_error_panic_hook",
  "getrandom 0.2.16",
