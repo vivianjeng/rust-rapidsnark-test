@@ -29,6 +29,8 @@ jobs:
                     - 1.88.0
                     - 1.89.0
         steps:
+            - name: install dependencies
+              run: brew install nasm
             - uses: actions/checkout@v5
             - name: Install Rust
               uses: dtolnay/rust-toolchain@stable
